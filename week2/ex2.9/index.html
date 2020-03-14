@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+  <head>
+    <title>Ex2.9</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <form action="/week2/ex2.9/form.php" method="POST">
+      <label for="userName">Name: </label>
+      <input type="text" id="userName" name="userName" /><br />
+
+      <label for="class">Class: </label>
+      <input type="text" id="class" name="class" /><br />
+
+      <label for="university">University: </label>
+      <input type="text" id="university" name="university" /><br /><br />
+
+      <label for="gender">Gender: </label><br />
+      <input type="radio" id="gender" name="gender" value="male" /> Male<br />
+      <input type="radio" id="gender" name="gender" value="female" />
+      Female<br />
+      <input type="radio" id="gender" name="gender" value="other" />
+      Gayy<br /><br />
+
+      <label for="vehicle">Vehicle: </label><br />
+      <input type="checkbox" id="vehicle1" name="vehicle[]" value="Bike" />
+      <label for="vehicle1"> I have a bike</label><br />
+      <input type="checkbox" id="vehicle2" name="vehicle[]" value="Car" />
+      <label for="vehicle2"> I have a car</label><br />
+      <input type="checkbox" id="vehicle3" name="vehicle[]" value="Boat" />
+      <label for="vehicle3"> I have a boat</label><br />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
