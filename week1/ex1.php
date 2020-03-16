@@ -10,7 +10,7 @@
     The heading above is aligned to the right of this page. <br/>
     The heading above is aligned to the right of this page. <br/>
     The heading above is aligned to the right of this page.
-<p/>
+</p>
 
 <hr/>
 <p style="text-align: center">
