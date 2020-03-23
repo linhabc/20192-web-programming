@@ -28,6 +28,15 @@ and open the template in the editor.
       <input type="radio" id="gender" name="gender" value="other" />
       Gayy<br /><br />
 
+      <label for="gpa">GPA</label>
+      <select name="gpa">
+        <option value="4">4</option>
+        <option value="3">3</option>
+        <option value="2">2</option>
+        <option value="1">1</option>
+      </select>
+      <br /><br />
+
       <label for="vehicle">Vehicle: </label><br />
       <input type="checkbox" id="vehicle1" name="vehicle[]" value="Bike" />
       <label for="vehicle1"> I have a bike</label><br />
@@ -35,7 +44,14 @@ and open the template in the editor.
       <label for="vehicle2"> I have a car</label><br />
       <input type="checkbox" id="vehicle3" name="vehicle[]" value="Boat" />
       <label for="vehicle3"> I have a boat</label><br />
+
+      <label for="comment">Comment:</label>
+      <br />
+      <textarea name="comment" rows="8" cols="80"></textarea>
+      <br />
+      <br />
       <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
     </form>
   </body>
 </html>
