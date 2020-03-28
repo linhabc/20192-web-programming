@@ -7,7 +7,7 @@
 </head>
 <body>
     <font size="4" color="blue">Welcome to TunaCafe</font>
-    <form action="./tunaResult.php" method="get">
+    <form action="./tunaCafe.php" method="get">
         <?php 
             $menu = array('Tuna0', 'Tuna1', 'Tuna2', 'Tuna3');
             $bestseller = 2;
