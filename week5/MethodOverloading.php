@@ -1,11 +1,18 @@
-<html>
+<?php
+  class MethodTest {
+    public function __call($name, $args) {
+      echo "Calling object method '$name' "
+        . implode(', ', $args)
+        . "<br>";
+    }
 
-<head>
-    <title>Web Info System</title>
-</head>
+    public static function __callStatic($name, $args) {
+      echo "Calling static method '$name' "
+        . implode(', ', $args)
+        . "<br>";
+    }
+  }
 
-<body>
-    <h1>Bài kiểm tra số 1</h1>
-</body>
-
-</html>
+  $obj = new MethodTest;
+  $obj->runTest(1, 2, 3, 'in object context');
+  MethodTest::runTest(1, 2, 3, 'in static context');
