@@ -57,4 +57,3 @@
   echo $obj->getHidden() . "\n";
   echo "Privates are not visible outside the class, so __get() is used...\n";
   echo $obj->hidden . "\n";
-ww

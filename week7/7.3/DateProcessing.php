@@ -1,31 +1,32 @@
  <html>
 
  <head>
-     <title>Decsions</title>
+     <title>Decisions</title>
  </head>
 
  <body>
      <?php
 
-        $date = $_POST['date'];
+$date = $_POST['date'];
 
-        $two = '[[:digit:]]{2}';
+$two = '[[:digit:]]{2}';
 
-        $month = '[0-1][[:digit:]]';
+$month = '[0-1][[:digit:]]';
 
-        $day = '[0-3][[:digit:]]';
+$day = '[0-3][[:digit:]]';
 
-        $year = "2[[:digit:]]$two";
+$year = "2[[:digit:]]$two";
 
-        $pattern = "/^($year)-($month)-($day)$/";
+$pattern = "/^($year)-($month)-($day)$/";
 
-        if (preg_match($pattern, $date)) {
+if (preg_match($pattern, $date)) {
+    print "Got valid date = $date $pattern<br>";
+} else {
 
-            print "Got valid date = $date $pattern<br>";
-        } else {
+    print "Invalid date = $date $pattern";
+}
+?>
 
-            print "Invalid date = $date $pattern";
-        }
-        ?> </body>
+ </body>
 
  </html>
