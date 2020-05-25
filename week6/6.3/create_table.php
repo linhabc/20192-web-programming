@@ -1,15 +1,15 @@
 <html>
 
 <head>
-	<title>Create Table</title>
+    <title>Create Table</title>
 </head>
 
 <body>
-	<?php
+    <?php
 	// phpinfo();
 	$server = 'localhost:3306';
 	$user = 'root';
-	$pass = '37550580';
+	$pass = '';
 	$mydb = 'test';
 	$table_name = 'Products';
 	$connect = mysqli_connect($server, $user, $pass, $mydb);
